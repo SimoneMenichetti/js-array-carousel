@@ -11,6 +11,10 @@
 
     const ArrayImmagini = ['./img/01.webp','./img/02.webp','./img/03.webp','./img/04.webp','./img/05.webp'];
 
+      // 3
+        // prendere l' elemento contenitore degli item del carosello rendendolo globale 
+
+        const itemsContenitore = document.querySelector(".carosello");
 
 // 2
     // inizio ciclo for per estrapolazione degli elementi img
@@ -18,7 +22,20 @@
     for(let i = 0; i < ArrayImmagini.length; i++) {
         let itemImmagine = ArrayImmagini[i];
         console.log(itemImmagine);
+
+          // 4
+            // creare l'elemento da inserire ad ogni iterazione
+        let itemContenuto = `<div class="carosello-item"><img src="${itemImmagine}"></div>`;
+
+
+        // 5
+            // inserire il nuovo elemento creato nel contenitore nel dom "carosello"
+
+            itemsContenitore.innerHTML += itemContenuto;
     }
 
     // 3
-        // prendere l' elemento contenitore degli item del carosello
+        // prendere l' elemento contenitore degli item del carosello e spostarlo per renderlo una const globale per l'utilizzo 
+
+  
+

@@ -63,13 +63,13 @@ body {
 
 /* regole item carosello */
 
-.carousel-item {
+.carosello-item {
     display: none;
     position: absolute;
     width: 100%;
 }
 
 /* display block all'active per js */
-.carousel-item.active {
+.carosello-item.active {
     display: block;
 }
