@@ -15,9 +15,9 @@
 // 2
     // inizio ciclo for per estrapolazione degli elementi img
 
-    for(let i = 0; i < ArrayImmagini.leght; i++) {
-        let imgItem = ArrayImmagini[i];
-        console.log(imgItem);
+    for(let i = 0; i < ArrayImmagini.length; i++) {
+        let itemImmagine = ArrayImmagini[i];
+        console.log(itemImmagine);
     }
 
     // 3
