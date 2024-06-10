@@ -53,11 +53,11 @@ body {
 }
 
 /*  controllo carosello indietro */
-.carosello-control-prev {
+.carosello-control.prev {
     left: 10px;
 }
 /* controllo carosello */
-.carosello-control-next {
+.carosello-control.next {
     right: 10px;
 }
 
@@ -65,8 +65,7 @@ body {
 
 .carosello-item {
     display: none;
-    position: absolute;
-    width: 100%;
+   
 }
 
 /* display block all'active per js */

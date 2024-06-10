@@ -41,7 +41,7 @@
     // 6
         // selezionare tutti gli elementi " carosello-item" in pagina
 
-        const itemCarosello = document.getElementsByClassName("carosello-item");
+        const itemContenuto  = document.getElementsByClassName("carosello-item");
 
             // // verifica funzionamento
 
@@ -50,7 +50,7 @@
         let activeItem = 0;
     // 7
         // inserire la class active all " carosello-item"
-        itemCarosello[activeItem].classList.add("active");
+        itemContenuto [activeItem].classList.add("active");
 
         // verifica funzionamento aggiunta classe activ al " carosello-item 0"
             // console.log( itemCarosello[activeItem]);
@@ -58,7 +58,7 @@
     // 8
         // per dare la funzione di active all'interazione utente vado a selezionare il bottone next creando una const
 
-        const next = document.querySelector(".carosello-control-next");
+        const next = document.querySelector(".next");
             // verifica funzionamento selezione in console
             // console.log(next);
 
@@ -69,23 +69,28 @@
     next.addEventListener("click",
         function() {
 
-            // eliminare l'active all item attivo
-            itemCarosello[activeItem].classList.remove("active");
+            if(activeItem < ArrayImmagini.length -1) {
 
-            // incremento valore item
+                // verificare se non siamo alla fine della lista immagini
 
-            activeItem = activeItem +1;
+                // eliminare l'active all item attivo
+                itemContenuto [activeItem].classList.remove("active");
+
+                // incremento valore item
+
+                activeItem = activeItem +1;
 
 
-            // inserire la classe active agli elementi corrispondenti all item aggiornato
+                // inserire la classe active agli elementi corrispondenti all item aggiornato
 
-            itemCarosello[activeItem].classList.add("active");
+                itemContenuto [activeItem].classList.add("active");
+
+            }
+
+           
 
 
         }
-
-        
-
 
     )
 
