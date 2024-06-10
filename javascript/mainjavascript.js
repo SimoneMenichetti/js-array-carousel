@@ -9,9 +9,16 @@
 // 1
     // creazione nuovo array per le img da inserire dinamicamente da js
 
-    const ArrayImmaginiCarosello =
-    ["./img/01.webp", "./img/02.webp","./img/03.webp","./img/04.webp","./img/05.webp",]
+    const ArrayImmagini = ['./img/01.webp','./img/02.webp','./img/03.webp','./img/04.webp','./img/05.webp'];
 
 
 // 2
     // inizio ciclo for per estrapolazione degli elementi img
+
+    for(let i = 0; i < ArrayImmagini.leght; i++) {
+        let imgItem = ArrayImmagini[i];
+        console.log(imgItem);
+    }
+
+    // 3
+        // prendere l' elemento contenitore degli item del carosello
