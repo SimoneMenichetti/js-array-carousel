@@ -63,5 +63,32 @@
             // console.log(next);
 
 
+
+    // 9 gestire l evento click
+
+    next.addEventListener("click",
+        function() {
+
+            // eliminare l'active all item attivo
+            itemCarosello[activeItem].classList.remove("active");
+
+            // incremento valore item
+
+            activeItem = activeItem +1;
+
+
+            // inserire la classe active agli elementi corrispondenti all item aggiornato
+
+            itemCarosello[activeItem].classList.add("active");
+
+
+        }
+
+        
+
+
+    )
+
+
   
 
