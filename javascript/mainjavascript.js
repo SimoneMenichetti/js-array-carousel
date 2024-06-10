@@ -41,13 +41,26 @@
     // 6
         // selezionare tutti gli elementi " carosello-item" in pagina
 
-        const items = document.getElementsByClassName("carosello-item");
+        const itemCarosello = document.getElementsByClassName("carosello-item");
 
-            // verifica funzionamento
+            // // verifica funzionamento
 
-            console.log(items);
+            // console.log(items);
 
+        let activeItem = 0;
+    // 7
+        // inserire la class active all " carosello-item"
+        itemCarosello[activeItem].classList.add("active");
 
+        // verifica funzionamento aggiunta classe activ al " carosello-item 0"
+            // console.log( itemCarosello[activeItem]);
+
+    // 8
+        // per dare la funzione di active all'interazione utente vado a selezionare il bottone next creando una const
+
+        const next = document.querySelector(".carosello-control-next");
+            // verifica funzionamento selezione in console
+            // console.log(next);
 
 
   
