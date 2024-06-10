@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* regole generali per centrare il container principale per il carosello e gli item img */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    
+}
+
+/* regole generali container carosello item */
+.carosello-container {
+    position: relative;
+    width: 800px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    background-color: #fff;
+    border-radius: 10px;
+    
+}
+
+/* regole generali img */
+.carosello img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* pannello di controllo del carosello  */
+.carosello-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+/*  controllo carosello indietro */
+.carosello-control.prev {
+    left: 10px;
+}
+/* controllo carosello */
+.carosello-control.next {
+    right: 10px;
+}
+
+
+
+
+/* regole item carosello */
+
+.carousel-item {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+/* display block all'active per js */
+.carousel-item.active {
+    display: block;
+}
