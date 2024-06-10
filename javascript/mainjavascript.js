@@ -37,5 +37,18 @@
     // 3
         // prendere l' elemento contenitore degli item del carosello e spostarlo per renderlo una const globale per l'utilizzo 
 
+
+    // 6
+        // selezionare tutti gli elementi " carosello-item" in pagina
+
+        const items = document.getElementsByClassName("carosello-item");
+
+            // verifica funzionamento
+
+            console.log(items);
+
+
+
+
   
 
